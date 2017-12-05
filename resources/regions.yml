@@ -1,0 +1,7 @@
+---
+region_a:
+  world: world
+  pos1: "1:2:3"
+  pos2: "3:4:5"
+  flags: 0
+...

@@ -1,17 +1,6 @@
 name: WorldGuard
-main: WorldGuard\WorldGuard
-api: [2.0.0, 3.0.0-ALPHA3, 3.0.0-ALPHA4, 3.0.0-ALPHA5, 3.0.0-ALPHA6, 3.0.0-ALPHA7, 3.0.0-ALPHA8]
-version: 1.0
+main: worldguard\WorldGuard
+api: 3.0.0-ALPHA10
+version: 0.0.1
 author: Muqsit
-website: https://github.com/Muqsit
-commands:
-  region:
-    aliases: ["rg"]
-    default: op
-permissions:
-  worldguard.create:
-    default: op
-  worldguard.modify:
-    default: op
-  worldguard.delete:
-    default: op
+website: https://github.com/Muqsit/WorldGuard
