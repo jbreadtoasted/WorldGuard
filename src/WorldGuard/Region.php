@@ -232,19 +232,19 @@ class Region {
         return isset($allowed[$command]);
     }
 
-    public function addToWhitelist(string $playername)
+    public function addToWhitelist(string $groupname)
     {
-        return isset($this->flags["whitelist"][strtolower($playername)]);
+        return isset($this->flags["whitelist"][strtolower($groupname)]);
     }
 
-    public function removeFromWhitelist(string $playername)
+    public function removeFromWhitelist(string $groupname)
     {
-        unset($this->flags["whitelist"][strtolower($playername)]);
+        unset($this->flags["whitelist"][strtolower($groupname)]);
     }
 
-    public function isWhitelisted(Player $player)
+    public function isWhitelisted(Group $group)
     {
-        return isset($this->flags["whitelist"][strtolower($player->getName())]);
+        return isset($this->flags["whitelist"][strtolower($group->getGroupName())]);
     }
 
     public function getWhitelistString() : string
