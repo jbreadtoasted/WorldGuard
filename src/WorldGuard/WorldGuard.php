@@ -144,16 +144,6 @@ class WorldGuard extends PluginBase {
         return isset(self::FLAGS[$flag]);
     }
 
-    public function sessionizePlayer(Player $player)
-    {
-        foreach ($player->getEffects() as $effect) {
-            if ($effect->getDuration() >= 999999) {
-                $player->removeEffect($effect->getId());
-            }
-        }
-        $this->players[$player->getRawUniqueId()] = "";
-    }
-
     public function getRegionFromPosition(Position $pos)
     {
         $name = $this->getRegionNameFromPosition($pos);
