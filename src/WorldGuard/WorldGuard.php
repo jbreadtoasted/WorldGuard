@@ -152,7 +152,6 @@ class WorldGuard extends PluginBase {
             }
         }
         $this->players[$player->getRawUniqueId()] = "";
-        $this->updateRegion($player);
     }
 
     public function getRegionFromPosition(Position $pos)
