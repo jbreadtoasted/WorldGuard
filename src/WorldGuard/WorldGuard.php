@@ -256,16 +256,6 @@ class WorldGuard extends PluginBase {
         return true;
     }
 
-    public function updateRegion(Player $player)
-    {
-        $region = $this->players[$id = $player->getRawUniqueId()];
-        if (($newRegion = $this->getRegionNameFromPosition($player->getPosition())) !== $region) {
-            $this->players[$id] = $newRegion;
-            return $this->onRegionChange($player, $region, $newRegion);
-        }
-        return true;
-    }
-
     public function processCreation(Player $player)
     {
         if (isset($this->creating[$id = $player->getRawUniqueId()], $this->process[$id])) {
